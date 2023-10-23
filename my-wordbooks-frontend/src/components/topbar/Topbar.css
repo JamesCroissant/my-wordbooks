@@ -1,0 +1,122 @@
+.topbarContainer {
+  background-color: orange;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  position: sticky;
+  top: 0;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.logo {
+  font-size: 25px;
+  color: white;
+  margin: 20px;
+}
+
+
+.menuList {
+  display: flex;
+  margin-top: 10px;
+  padding: 0;
+}
+
+.menuCategory {
+  list-style: none;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.menuCategoryText {
+  font-size: 18px;
+}
+
+.menuCategoryText:hover {
+  transition: all 0.3s;
+  color:red;
+}
+
+
+.close-btn {
+  display: none;
+}
+
+#menu-toggle {
+  display: none;
+}
+.menu-icon {
+  display: none;
+}
+
+.menu-icon:hover {
+  color: red;
+}
+
+
+@media screen and (max-width: 1024px) {
+  #menu-toggle {
+    display: none;
+  }
+
+  .topbarRight {
+    position: fixed; 
+    top: 0;
+    right: -250px;
+    width: 240px;
+    height: 100%;
+    background-color: rgb(240, 42, 42);
+    transition: right 0.3s;
+    overflow-y: auto;
+  }
+
+
+  .menuList {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menuCategoryText {
+    display: block;
+    padding: 20px;
+    font-size: 19px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .menuCategoryText:hover {
+    transition: all 0.3s;
+    color:orange;
+  }
+
+
+  .close-btn {
+    display: block;
+    position: absolute;
+    top: 225px;
+    right: 104px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    padding: 10px;
+  }
+
+  .close-btn:hover {
+    color: orange;
+  }
+  
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+  }
+
+  #menu-toggle:checked + .menu-icon + .topbarRight {
+    right: 0;
+  }
+}
