@@ -1,5 +1,5 @@
 .container {
-  margin: 200px;
+  margin: 100px;
 }
 
 .homeTitle{
@@ -7,7 +7,6 @@
 }
 
 .homeLogo {
-  width: 40%;
-  height: 30%;
-  /* background-color: pink; */
+  width: 30%;
+  height: 40%;
 }
