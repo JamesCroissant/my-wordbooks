@@ -1,0 +1,13 @@
+.container {
+  margin: 200px;
+}
+
+.homeTitle{
+  color:rgba(244, 142, 9, 0.883);
+}
+
+.homeLogo {
+  width: 40%;
+  height: 30%;
+  /* background-color: pink; */
+}
