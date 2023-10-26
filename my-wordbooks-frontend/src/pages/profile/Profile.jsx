@@ -10,7 +10,7 @@ export default function Profile () {
   const { user, setUser, dispatch } = useContext(AuthContext);
   const [editedUser, setEditedUser] = useState(user);
   const [isEditing, setIsEditing] = useState(false);
-  const baseUrl = "http://localhost:5000/api";
+  const baseUrl = "https://my-wordbooks.onrender.com/api";
 
 
   const someAsyncUpdateOperation = async (userData) => {

@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const loginCall = async(user, dispatch) => {
-  const baseUrl = "http://localhost:5000/api";
+  const baseUrl = "https://my-wordbooks.onrender.com/api";
 
   dispatch({ type: "LOGIN_START" });
   try {

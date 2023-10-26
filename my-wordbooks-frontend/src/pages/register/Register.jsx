@@ -8,7 +8,7 @@ export default function Register () {
   const email = useRef();
   const password = useRef();
   const passwordConfirmation = useRef();
-  const baseUrl = "http://localhost:5000/api";
+  const baseUrl = "https://my-wordbooks.onrender.com/api";
 
   const navigate = useNavigate();
 
