@@ -9,7 +9,7 @@ const Wordlist = () => {
 
   const { user } = useContext(AuthContext);
   const userId = user._id;
-  const baseUrl = "http://localhost:5000/api";
+  const baseUrl = "https://my-wordbooks.onrender.com/api";
 
   useEffect(() => {
     const fetchUserWords = async () => {
