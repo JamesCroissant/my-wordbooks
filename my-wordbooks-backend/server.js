@@ -29,7 +29,7 @@ mongoose
 app.use(express.json());
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "https://my-wordbooks-frontend.onrender.com/",
   })
 )
 app.use(bodyParser.json());
